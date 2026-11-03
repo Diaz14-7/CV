@@ -1,0 +1,169 @@
+---
+
+---
+
+<section id="formacion">
+  <h2>Formación</h2>
+
+  <div class="lista">
+    <article class="fila">
+      <span class="numero">1</span>
+      <img src="/logo-daw.png" alt="Escuela Profesional Vedruna Sevilla" />
+      <div class="centro">
+        <p class="nombre">Escuela Profesional Vedruna Sevilla</p>
+        <p class="titulo">DAW</p>
+      </div>
+      <span class="anios">2025/2027</span>
+      <span class="nota">8.38</span>
+    </article>
+
+    <article class="fila">
+      <span class="numero">2</span>
+      <img
+        src="/logo-bachillerato.png"
+        alt="Fundación Vedruna Educación Sevilla"
+      />
+      <div class="centro">
+        <p class="nombre">Fundación Vedruna Educación Sevilla</p>
+        <p class="titulo">Bachillerato</p>
+      </div>
+      <span class="anios">2023/2025</span>
+      <span class="nota">8.00</span>
+    </article>
+
+    <article class="fila">
+      <span class="numero">3</span>
+      <img
+        src="/logo-fundacion.png"
+        alt="Fundación Vedruna Educación Sevilla"
+      />
+      <div class="centro">
+        <p class="nombre">Fundación Vedruna Educación Sevilla</p>
+        <p class="titulo">ESO</p>
+      </div>
+      <span class="anios">2019/2023</span>
+      <span class="nota">8.75</span>
+    </article>
+
+    <article class="fila">
+      <span class="numero">4</span>
+      <img
+        src="/logo-fundacion.png"
+        alt="Fundación Vedruna Educación Sevilla"
+      />
+      <div class="centro">
+        <p class="nombre">Fundación Vedruna Educación Sevilla</p>
+        <p class="titulo">EPO</p>
+      </div>
+      <span class="anios">2013/2019</span>
+      <span class="nota">9.50</span>
+    </article>
+
+    <article class="fila">
+      <span class="numero">5</span>
+      <img
+        src="/logo-fundacion.png"
+        alt="Fundación Vedruna Educación Sevilla"
+      />
+      <div class="centro">
+        <p class="nombre">Fundación Vedruna Educación Sevilla</p>
+        <p class="titulo">EIO</p>
+      </div>
+      <span class="anios">2010/2013</span>
+      <span class="nota">10.00</span>
+    </article>
+  </div>
+</section>
+
+<style>
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: calc(100vh - 56px);
+    padding: 2rem 5rem 4rem 5rem;
+    box-sizing: border-box;
+    scroll-margin-top: 56px;
+  }
+
+  h2 {
+    margin: 0 0 2.5rem 0;
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
+
+  .lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .fila {
+    display: grid;
+    grid-template-columns: 2.5rem 50px 1fr 9rem 4rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .numero {
+    color: #aaaaaa;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .fila img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .nombre {
+    margin: 0 0 0.2rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .titulo {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #9a9a9a;
+  }
+
+  .anios,
+  .nota {
+    color: #9a9a9a;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .nota {
+    text-align: right;
+  }
+
+  @media (max-width: 700px) {
+    section {
+      padding: 1.5rem 1.5rem 3rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .fila {
+      grid-template-columns: 1.5rem 44px 1fr 5.5rem 3rem;
+      gap: 0.6rem;
+    }
+
+    .nombre {
+      font-size: 0.8rem;
+    }
+
+    .anios,
+    .nota {
+      font-size: 0.75rem;
+    }
+  }
+</style>
