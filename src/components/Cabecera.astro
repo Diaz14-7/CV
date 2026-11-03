@@ -4,7 +4,7 @@
 
 <header>
   <nav>
-    <a class="opcion icono" href="#inicio" aria-label="Inicio">
+    <a class="opcion icono casa" href="#inicio" aria-label="Inicio">
       <img src="/casa.png" alt="Inicio" />
     </a>
 
@@ -24,7 +24,7 @@
     </a>
 
     <a
-      class="opcion icono"
+      class="opcion icono linkedin"
       href="https://www.linkedin.com/in/%C3%A1lvaro-d%C3%ADaz-p%C3%A9rez-300b28445"
       target="_blank"
       rel="noopener noreferrer"
@@ -42,8 +42,7 @@
     left: 0;
     width: 100%;
     z-index: 10;
-    padding: 0.5rem 1rem;
-    box-sizing: border-box;
+    padding: 0.25rem 0;
     background: rgba(163, 10, 16, 0.75);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -51,17 +50,19 @@
 
   nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
+    padding: 0 5rem;
+    box-sizing: border-box;
   }
 
   .opcion {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.7rem 2rem;
+    padding: 0.4rem 2rem;
     border-radius: 8px;
     background: transparent;
     color: #141414;
@@ -82,9 +83,23 @@
     padding: 0.7rem 1.2rem;
   }
 
+  .casa {
+    margin-left: -1.2rem;
+  }
+
+  .linkedin {
+    margin-right: -1.2rem;
+  }
+
   .icono img {
-    height: 28px;
+    height: 24px;
     width: auto;
     display: block;
+  }
+
+  @media (max-width: 700px) {
+    nav {
+      padding: 0 1.5rem;
+    }
   }
 </style>

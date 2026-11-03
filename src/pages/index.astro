@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Cabecera from "../components/Cabecera.astro";
 import Carrusel from "../components/Carrusel.astro";
+import Habilidades from "../components/Habilidades.astro";
 ---
 
 <Layout>
@@ -14,9 +15,7 @@ import Carrusel from "../components/Carrusel.astro";
       <h2>SOBRE MÍ</h2>
     </section>
 
-    <section id="habilidades" class="pendiente">
-      <h2>HABILIDADES</h2>
-    </section>
+    <Habilidades />
 
     <section id="formacion" class="pendiente">
       <h2>FORMACIÓN</h2>
@@ -38,7 +37,7 @@ import Carrusel from "../components/Carrusel.astro";
   }
 
   .pendiente {
-    min-height: 80vh;
+    min-height: calc(100vh - 56px);
     padding: 4rem 5rem;
     box-sizing: border-box;
     scroll-margin-top: 70px;
