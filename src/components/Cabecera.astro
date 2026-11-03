@@ -1,0 +1,90 @@
+---
+
+---
+
+<header>
+  <nav>
+    <a class="opcion icono" href="#inicio" aria-label="Inicio">
+      <img src="/public/casa.png" alt="Inicio" />
+    </a>
+
+    <a class="opcion" href="#sobre-mi">Sobre mí</a>
+    <a class="opcion" href="#habilidades">Habilidades</a>
+    <a class="opcion" href="#formacion">Formación</a>
+    <a class="opcion" href="#experiencia">Experiencia</a>
+
+    <a
+      class="opcion icono"
+      href="https://github.com/TU_USUARIO"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="GitHub"
+    >
+      <img src="/public/github.png" alt="GitHub" />
+    </a>
+
+    <a
+      class="opcion icono"
+      href="https://www.linkedin.com/in/TU_USUARIO"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="LinkedIn"
+    >
+      <img src="/public/linkedin.png" alt="LinkedIn" />
+    </a>
+  </nav>
+</header>
+
+<style>
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    background: rgba(163, 10, 16, 0.75);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .opcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    border-radius: 8px;
+    background: transparent;
+    color: #141414;
+    font-size: 1rem;
+    text-decoration: none;
+    transition:
+      background 0.25s ease,
+      color 0.25s ease;
+  }
+
+  .opcion:hover,
+  .opcion:focus-visible {
+    background: rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+  }
+
+  .icono {
+    padding: 0.7rem 1.2rem;
+  }
+
+  .icono img {
+    height: 28px;
+    width: auto;
+    display: block;
+  }
+</style>
