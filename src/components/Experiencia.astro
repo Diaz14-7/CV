@@ -1,0 +1,155 @@
+---
+
+---
+
+<section id="experiencia">
+  <h2>EXPERIENCIA</h2>
+
+  <div class="empresas">
+    <article class="empresa">
+      <a
+        class="logo"
+        href="https://www.soltel.es"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ir a la web de Soltel"
+      >
+        <img src="/soltel.png" alt="Soltel Group" />
+      </a>
+      <h3>Soltel</h3>
+      <p class="puesto">Desarrollador web</p>
+      <p class="anios">2026</p>
+    </article>
+
+    <article class="empresa">
+      <a
+        class="logo"
+        href="https://www.google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ir a la web de Google"
+      >
+        <img src="/google.png" alt="Google" />
+      </a>
+      <h3>Google</h3>
+      <p class="puesto">Jefe de proyecto</p>
+      <p class="anios">2024-2026</p>
+    </article>
+
+    <article class="empresa">
+      <a
+        class="logo"
+        href="https://www.amazon.es"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ir a la web de Amazon"
+      >
+        <img src="/amazon.png" alt="Amazon" />
+      </a>
+      <h3>Amazon</h3>
+      <p class="puesto">Ingeniéro de datos</p>
+      <p class="anios">2023</p>
+    </article>
+
+    <article class="empresa">
+      <a
+        class="logo"
+        href="https://www.microsoft.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ir a la web de Microsoft"
+      >
+        <img src="/microsoft.png" alt="Microsoft" />
+      </a>
+      <h3>Microsoft</h3>
+      <p class="puesto">Ayudante</p>
+      <p class="anios">2021-2022</p>
+    </article>
+  </div>
+</section>
+
+<style>
+  section {
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: calc(100vh - 56px);
+    padding: 6rem 5rem 4rem 5rem;
+    box-sizing: border-box;
+    scroll-margin-top: 56px;
+  }
+
+  h2 {
+    margin: 0 0 3rem 0;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+
+  .empresas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 1.2rem;
+    transition: transform 0.25s ease;
+  }
+
+  .logo:hover,
+  .logo:focus-visible {
+    transform: scale(1.08);
+  }
+
+  .logo img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  h3 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  .puesto,
+  .anios {
+    margin: 0;
+    color: #9a9a9a;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  .puesto {
+    margin-bottom: 0.8rem;
+  }
+
+  @media (max-width: 800px) {
+    section {
+      padding: 1.5rem 1.5rem 3rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .empresas {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2.5rem;
+    }
+  }
+</style>
