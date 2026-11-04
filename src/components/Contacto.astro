@@ -1,0 +1,187 @@
+---
+
+---
+
+<section id="contacto">
+  <div class="contenido">
+    <div class="lateral izquierda">
+      <p>Disponible</p>
+      <p>Cualquier puesto</p>
+      <p>Diseñado en Figma</p>
+      <p>Cookies</p>
+    </div>
+
+    <div class="centro">
+      <img class="logo" src="/logo-alvaro.png" alt="Álvaro 2007" />
+
+      <div class="redes">
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <img src="/facebook.png" alt="Facebook" />
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <img src="/instagram.png" alt="Instagram" />
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+        >
+          <img src="/tiktok.png" alt="TikTok" />
+        </a>
+        <a
+          href="https://github.com/Diaz14-7"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <img src="/github-circulo.png" alt="GitHub" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/%C3%A1lvaro-d%C3%ADaz-p%C3%A9rez-300b28445"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <img src="/linkedin-circulo.png" alt="LinkedIn" />
+        </a>
+      </div>
+    </div>
+
+    <div class="lateral derecha">
+      <a href="mailto:nombreapellido@gmail.com">nombreapellido@gmail.com</a>
+      <a href="tel:+34123456789">+34 123 45 67 89</a>
+    </div>
+  </div>
+
+  <div class="gracias">
+    <p>Muchas gracias por ver</p>
+  </div>
+</section>
+
+<style>
+  section {
+    min-height: calc(100vh - 56px);
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 56px;
+  }
+
+  .contenido {
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 5rem 4rem 5rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: start;
+    align-content: center;
+    gap: 2rem;
+  }
+
+  .lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.2rem;
+  }
+
+  .lateral p,
+  .lateral a {
+    margin: 0 0 0.3rem 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .derecha a:hover {
+    text-decoration: underline;
+  }
+
+  .centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    height: 90px;
+    width: auto;
+    display: block;
+  }
+
+  .redes {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .redes a {
+    display: block;
+    transition: transform 0.25s ease;
+  }
+
+  .redes a:hover,
+  .redes a:focus-visible {
+    transform: scale(1.12);
+  }
+
+  .redes img {
+    width: 44px;
+    height: 44px;
+    display: block;
+  }
+
+  .gracias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    background: #8b0000;
+  }
+
+  .gracias p {
+    margin: 0;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  @media (max-width: 800px) {
+    .contenido {
+      grid-template-columns: 1fr;
+      padding: 2rem 1.5rem 3rem 1.5rem;
+      justify-items: center;
+    }
+
+    .lateral {
+      padding-top: 0;
+    }
+
+    .redes {
+      gap: 1rem;
+    }
+
+    .izquierda {
+      order: 2;
+    }
+
+    .derecha {
+      order: 3;
+    }
+  }
+</style>
